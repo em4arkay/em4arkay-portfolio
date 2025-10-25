@@ -153,7 +153,7 @@ const ImgCaption = styled.p`
 `;
 
 const Hero = () => {
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
     const [content, setContent] = useState<HeroContent | null>(null);
 
     useEffect(() => {
