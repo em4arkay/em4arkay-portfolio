@@ -1,6 +1,13 @@
 import { createGlobalStyle } from 'styled-components';
+import FiraCodeFont from './assets/fonts/FiraCodeNerdFontMono-Regular.ttf';
 
 export const GlobalStyle = createGlobalStyle`
+    @font-face {
+        font-family: 'FiraCode Nerd Font Mono'; 
+        src: url(${FiraCodeFont}) format('trueType'); 
+        font-weight: normal;
+        font-style: normal;
+    }
     * {
         box-sizing: border-box;
         margin: 0;
@@ -19,7 +26,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body {
-        font-family: FiraCode Nerd Font Mono;
+        font-family: 'FiraCode Nerd Font Mono', monospace;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         
@@ -30,6 +37,13 @@ export const GlobalStyle = createGlobalStyle`
 
         display: flex;
         flex-direction: column;
+    }
+
+    input,
+    button,
+    textarea,
+    select {
+        font-family: inherit;
     }
 
     section {
