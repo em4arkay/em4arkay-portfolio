@@ -42,6 +42,7 @@ export const GlobalStyle = createGlobalStyle`
     input,
     button,
     textarea,
+    form,
     select {
         font-family: inherit;
     }
