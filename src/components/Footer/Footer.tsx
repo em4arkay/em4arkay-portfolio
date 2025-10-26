@@ -16,12 +16,21 @@ const FooterTop = styled.div`
     gap: 2rem;
     border-top: 2px solid ${(props) => props.theme.borderColor};
     padding-top: 2rem;
+
+    @media (max-width: 768px) {
+        justify-content: center;
+    }
 `;
 
 const Left = styled.div`
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+
+    @media (max-width: 768px) {
+        align-items: center;
+        text-align: center;
+    }
 `;
 
 const Logo = styled.a`
