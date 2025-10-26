@@ -14,7 +14,7 @@ const ContactContainer = styled.section`
     @media (max-width: 768px) {
         flex-direction: column;
         align-items: center;
-        text-align: center;
+        // text-align: center;
     }
 `;
 
@@ -137,7 +137,7 @@ const FormInput = styled.input`
     width: 100%;
     padding: 0.75rem 1rem;
     font-size: 1rem;
-    font-family: 'FiraCode Nerd Font', monospace;
+    font-family: 'FiraCode Nerd Font Mono', monospace;
     color: ${(props) => props.theme.textPrimary};
     background-color: ${(props) => props.theme.bgCard};
     border: 1px solid ${(props) => props.theme.borderColor};
@@ -153,7 +153,7 @@ const FormTextarea = styled.textarea`
     width: 100%;
     padding: 0.75rem 1rem;
     font-size: 1rem;
-    font-family: 'FiraCode Nerd Font', monospace;
+    font-family: 'FiraCode Nerd Font Mono', monospace;
     color: ${(props) => props.theme.textPrimary};
     background-color: ${(props) => props.theme.bgCard};
     border: 1px solid ${(props) => props.theme.borderColor};
@@ -176,7 +176,7 @@ const SubmitButton = styled.button`
     border-radius: 4px;
     padding: 0.75rem 1.5rem;
     font-size: 1rem;
-    font-family: 'FiraCode Nerd Font', monospace;
+    font-family: 'FiraCode Nerd Font Mono', monospace;
     cursor: pointer;
     transition: all 0.2s ease;
     align-self: flex-start;
